@@ -30,3 +30,35 @@ header{
     font-family: var(--lg-font);
     letter-spacing: 2px;
 }
+
+/* collection-img styles */
+.collection-img > span{
+    top: 10px;
+    right: 10px;
+    width: 46px;
+    height: 46px;
+}
+
+/* special img */
+.special-img > span{
+    top: 10px;
+    right: 10px;
+    font-size: 72px;
+}
+.collection-img > img{
+    transition: all .5s linear;
+}
+.collection-img > img:hover{
+    transform: scale(1.2);
+}
+
+/* offers */
+#offers{
+    background-image: url(/images/offer_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#offers > row{
+    min-height: 60vh !important;
+}

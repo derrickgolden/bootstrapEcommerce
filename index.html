@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <title>E-Commerce</title>
@@ -110,6 +111,99 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
     </header>
+
+    <!-- collection -->
+    <section id="collection" class="py-5">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="title  text-capitalize d-inline-block position-relative text-dark fw-bold">
+            <span class="ms-3">new collection</span>
+            <span class="position-absolute top-50 start-0 bg-primary translate-middle-y"
+            style="width: 4px; height: 50px;"></span>
+          </h2>
+        </div>
+        <div class="row g-0">
+          <div class="d-flex justify-content-center .filter-button-group gap-4 py-5 flex-wrap">
+            <button data-filter="*" class="btn btn-outline-primary rounded-pill px-3 active">
+              All
+            </button>
+            <button data-filter="best" class="btn btn-outline-primary rounded-pill px-3">
+              Best Sellers
+            </button>
+            <button data-filter="feat" class="btn btn-outline-primary rounded-pill px-3">
+              Featured
+            </button>
+            <button data-filter="new" class="btn btn-outline-primary rounded-pill px-3">
+              New Arrival
+            </button>
+          </div>
+          <div class="collection-list  row gx-0 gy-3">
+            <!-- dom inserted by js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- special  -->
+    <section class="py-5" id="special">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="title  text-capitalize d-inline-block position-relative text-dark fw-bold">
+            <span class="ms-3">special selection</span>
+            <span class="position-absolute top-50 start-0 bg-primary translate-middle-y"
+            style="width: 4px; height: 50px;"></span>
+          </h2>
+        </div>
+        <div class="row g-0">
+          <div class="special-list row gx-0 gy-3">
+            <!-- dom inserted by js -->
+            
+          </div>
+        </div> 
+      </div> 
+    </section>
+
+    <!-- offers -->
+    <section id="offers" class="py-5">
+      <div class="container">
+        <div class="row d-flex align-items-center  "
+       style="min-height: 60vh;">
+          <div class="text-white ">
+            <span class="h3">
+              Discount Up To 40%
+            </span>
+            <p class="h1 display-4 my-4 ff-alegreya">Grand Sale Offer!</p>
+            <a href="#"
+            class="btn rounded-pill bg-white text-primary p-2 px-4">
+            Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blogs -->
+    <section class="py-5" id="blog">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="title  text-capitalize d-inline-block position-relative text-dark fw-bold">
+            <span class="ms-3">our latest blog</span>
+            <span class="position-absolute top-50 start-0 bg-primary translate-middle-y"
+            style="width: 4px; height: 50px;"></span>
+          </h2>
+        </div>
+        <div class="row blog-list gy-3">
+          <!-- dom inserted by js -->
+          
+        </div> 
+      </div>
+    </section>
+
+    <!-- bootstrap -->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- isotope -->
+    <script src="/node_modules/isotope-layout/dist/isotope.pkgd.js"></script>
+    <!-- javascript -->
+    <script src="/js/script.js"></script>
 </body>
 </html>

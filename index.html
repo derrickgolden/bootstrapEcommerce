@@ -3,13 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <title>E-Commerce</title>
 </head>
 <body>
-    
+    <!-- navBar -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow fixed-top">
+        <div class="container">
+            <a href="/index.html" class="navbar-brand d-flex align-items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                    <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                </svg>
+                <span class="text-uppercase fw-light" style="line-height: 1;">lux<br/>ury</span>
+            </a>
+            <div class="mt-4 mt-sm-2 order-lg-last">
+                <button type="button" class="btn position-relative border me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    <span class="position-absolute translate-middle top-0 start-100 badge 
+                    bg-dark">
+                        5
+                    </span>
+                </button>
+                <button type="button" class="btn position-relative border me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                    <span class="position-absolute translate-middle top-0 start-100 badge 
+                    bg-dark">
+                        3
+                    </span>
+                </button>
+                <button type="button" class="btn position-relative border">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+            </div>
+            <button class="navbar-toggler mt-4 mt-sm-2" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" 
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto ">
+              <li class="nav-item text-uppercase p-2 text-dark">
+                <a class="nav-link " href="#home">Home</a>
+              </li>
+              <li class="nav-item text-uppercase p-2 text-dark">
+                <a class="nav-link active" aria-current="page" href="#collection">collection</a>
+              </li>
+              <li class="nav-item text-uppercase p-2 text-dark">
+                <a class="nav-link" href="#specials">specials</a>
+              </li>
+              <li class="nav-item text-uppercase p-2 text-dark">
+                <a class="nav-link" href="#blogs">blogs</a>
+              </li>
+              <li class="nav-item text-uppercase p-2 text-dark">
+                <a class="nav-link" href="#about">about us</a>
+              </li>
+              
+              <li class="nav-item text-uppercase p-2 text-dark border-0">
+                <a class="nav-link " href="#popular">popular</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 
+    <!-- header -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel"
+    style="padding-top: 132px;">
+        <div class="container d-flex align-items-center h-100
+        carousel-inner">
+          <div class="text-center carousel-item active">
+            <h2 class="text-capitalize text-white display-5">
+              best collection
+            </h2>
+            <h2 class="text-uppercase text-white display-1 fw-bold py-2 ff-alegreya">
+              new arrival
+            </h2>
+            <a href="#" class="btn btn-light text-uppercase px-4 py-2 rounded-pill">shop now</a>
+          </div>
+          <div class="text-center carousel-item ">
+            <h2 class="text-capitalize text-white display-5">
+              best price $ offer
+            </h2>
+            <h2 class="text-uppercase text-white display-1 fw-bold py-2 ff-alegreya">
+              new season
+            </h2>
+            <a href="#" class="btn btn-light text-uppercase px-4 py-2 rounded-pill">
+              buy now
+            </a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </header>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

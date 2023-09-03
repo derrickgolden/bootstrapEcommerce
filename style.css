@@ -1,0 +1,32 @@
+
+:root{
+    --sm-font: 'Poppins', sans-serif;
+    --lg-font: 'DM Serif Display', serif;
+}
+
+body{
+    font-family: var(--sm-font);
+}
+
+/* navbar styles */
+.nav-item{
+    border-bottom: .5px solid rgba(0, 0, 0, .05);
+}
+@media (min-width: 992px) {
+    .nav-item{
+        border-bottom: none;
+    }
+    
+}
+
+/* header styles */
+header{
+    background-image: url(/images/banner-img-1.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ff-alegreya{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
